@@ -1,6 +1,6 @@
 # 💵 BantayAyuda: AI-Driven DSWD Emergency Cash Transfer System
 
-💻 **Web App Repository:** [https://lnkd.in/dK-QAB-k](https://lnkd.in/dK-QAB-k)
+💻 **Web App Repository:** [https://github.com/YashleyChua/BantayAyuda](https://github.com/YashleyChua/BantayAyuda)
 
 **🏆 Overall Champion** at **Hackamare: AI Hackathon 2025** (iACADEMY Makati), themed *Innovating with LLMs*.
 Developed by **TryCatchers**, Developers Society (DevSoc) Benilde.
