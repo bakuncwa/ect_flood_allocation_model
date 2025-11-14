@@ -134,8 +134,8 @@ Integrated directly into Django through `.bin` model loading for real-time infer
 
 ### Technical Contributions
 
-* Constructed a CatBoost GBDT damage-classification and Emergency Cash Transfer (ECT) classification model using engineered features such as **flood-depth:house-damage ratio** and geospatial proximity; achieved **100% accuracy, 100% precision, 100% recall**, and **1.00 F1-score**.
-* Loaded the trained model into a **Django REST API** with JSON-based inference endpoints and real-time `.bin` model loading for automated ECT computation.
+* Constructed a predictive CatBoost GBDT damage-classification and Emergency Cash Transfer (ECT) classification model using engineered features such as **flood-depth:house-damage ratio** and geospatial proximity; achieved **100% accuracy, 100% precision, 100% recall**, and **1.00 F1-score**.
+* Loaded the trained model into a **Django REST API** with JSON-based inference endpoints and real-time `.bin` model loading for automated ECT computation fed from sqlite3 database.
 * Implemented **Leaflet.js + OpenStreetMap GIS mapping** with dynamic JavaScript logic, hazard visualization layers, and optimized Django database interactions.
 
 ---
