@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Data files (too large for git)
+data/
+
+# Jupyter
+.ipynb_checkpoints/
+notebooks/catboost_info/
+
+# CatBoost training artifacts
+catboost_info/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
