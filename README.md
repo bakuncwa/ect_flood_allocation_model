@@ -185,15 +185,11 @@ Feature engineering (Spark SQL) then adds `Flood_Height_Ratio`, `Flood_House_Dam
 ## 📊 System Demo 
 
 <p align="center">
-  <img src="https://github.com/bakuncwa/ect_flood_allocation_model/blob/main/bantayayuda_1.png?raw=true" 
+  <img src="https://github.com/bakuncwa/ect_flood_allocation_model/blob/main/demo/BantayAyudaSystemDemo_1.png?raw=true" 
        alt="Bantay Ayuda System Demo" width="800"/>
 </p>
 <p align="center">
-  <img src="https://github.com/bakuncwa/ect_flood_allocation_model/blob/main/bantayayuda_2.png?raw=true" 
-       alt="Bantay Ayuda System Demo" width="800"/>
-</p>
-<p align="center">
-  <img src="https://github.com/bakuncwa/ect_flood_allocation_model/blob/main/bantayayuda_3.png?raw=true" 
+  <img src="https://github.com/bakuncwa/ect_flood_allocation_model/blob/main/demo/BantayAyudaSystemDemo_2.png?raw=true" 
        alt="Bantay Ayuda System Demo" width="800"/>
 </p>
 
