@@ -13,13 +13,13 @@ Developed by **TryCatchers**, Developers Society (DevSoc) Benilde.
 
 ---
 
-## 💡 Objectives
+## � Objectives
 
 On **November 13, 2025**, during iACADEMY Makati's **Hackamare: AI Hackathon 2025**, our team developed an AI-powered workflow that streamlines disaster damage assessments and automates cash assistance evaluation. BantayAyuda supports disaster-response units by improving speed, reducing human error, and ensuring equitable assistance distribution.
 
 ---
 
-## 💡 Problem Statement
+## ❓ Problem Statement
 
 Flood-affected communities often suffer from:
 
@@ -35,7 +35,7 @@ Local Government Units (LGUs), Department of Social Welfare and Development (DSW
 
 ---
 
-## 💡 Solution Pathways
+## 🧠 Solution Pathways
 
 BantayAyuda improves disaster-response workflows by:
 
@@ -212,6 +212,7 @@ Feature engineering (Spark SQL) then adds `Flood_Height_Ratio`, `Flood_House_Dam
 * Built an automated **ETL pipeline** web-scraping real-time flood sensor data from **DOST-ASTI PhilSensors** (43 stations) and streaming **922,905 Metro Manila building footprints** from **Microsoft Global ML Building Footprints** (17.4M features, ~5 GB GeoJSONL) using **Fiona** with spatial bbox filtering for memory-efficient geospatial ingestion.
 * Engineered features via **PySpark / Spark SQL** — computed `Flood_Height_Ratio` and `Flood_House_Damage_Ratio` (sensor-confirmed) from building surface area projections (**EPSG:3857**) and flood depth readings; derived `Damage_Classification` using ratio thresholds (0.4 / 0.8).
 * Constructed a predictive **CatBoost GBDT** multi-class classifier (iterations=1000, depth=6, lr=0.1, MultiClass loss, TotalF1 eval metric) for ECT allocation (₱0 / ₱5,000 / ₱10,000); achieved **99.99% accuracy**, **1.00 weighted F1-score**, **1.00 precision**, and **1.00 recall** on 922K real building footprints.
+* Produced a **confusion matrix** (custom earth-tone colormap) confirming near-perfect classification across all three ECT classes — 138,176 / 19,279 / 27,100 correct predictions for ₱0 / ₱5,000 / ₱10,000 respectively, with only 26 total misclassifications out of 184,581 test samples.
 * Generated a **Seaborn correlation heatmap** (YlGn colormap, zero-variance column filtering) to visualize feature-target relationships — confirming strong correlations between `Flood_House_Damage_Ratio`, `Flood_Height_Ratio`, and `Target_ECT_Amount`, validating the engineered ratio features as primary drivers of ECT classification.
 * Loaded the trained `.bin` model into a **Django REST API** with JSON-based inference endpoints and real-time model loading for automated ECT computation fed from SQLite3 database.
 * Implemented **Leaflet.js + OpenStreetMap GIS mapping** with dynamic JavaScript logic, hazard visualization layers, and optimized Django database interactions.
