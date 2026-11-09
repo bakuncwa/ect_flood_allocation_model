@@ -493,6 +493,7 @@ These correlations validate `Flood_House_Damage_Ratio` as the primary driver of 
 ### ML Pipeline Flowchart
 
 ```mermaid
+%%{init: {'flowchart': {'curve': 'step'}}}%%
 flowchart TD
     A["Data Sources<br/>DOST-ASTI PhilSensors (~43 stations)<br/>Microsoft Global ML Building Footprints (~17.4M polygons)"]
     B["ETL Ingestion<br/>scrape_waterlevel.py — session POST + CSRF scraping<br/>scrape_households.py — Fiona streaming + bbox filter"]
@@ -523,6 +524,7 @@ flowchart TD
 ### Flood-to-House Damage Ratio Scoring Diagram
 
 ```mermaid
+%%{init: {'flowchart': {'curve': 'step'}}}%%
 flowchart LR
     A["Building Footprint<br/>(House_Surface_Area_Sqm)"]
     B["EPSG:3857 Projection<br/>Area computation in m²"]
