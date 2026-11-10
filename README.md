@@ -493,7 +493,7 @@ These correlations validate `Flood_House_Damage_Ratio` as the primary driver of 
 ### ML Pipeline Flowchart
 
 ```mermaid
-%%{init: {'flowchart': {'curve': 'step'}}}%%
+%%{init: {'theme': 'base', 'flowchart': {'curve': 'step'}, 'themeVariables': {'primaryColor': '#ffffff', 'primaryBorderColor': '#000000', 'primaryTextColor': '#000000', 'lineColor': '#000000', 'secondaryColor': '#ffffff', 'tertiaryColor': '#ffffff', 'mainBkg': '#ffffff', 'nodeBorder': '#000000', 'clusterBkg': '#ffffff', 'clusterBorder': '#000000', 'edgeLabelBackground': '#ffffff', 'attributeBackgroundColorOdd': '#ffffff', 'attributeBackgroundColorEven': '#ffffff'}}}%%
 flowchart TD
     A["Data Sources<br/>DOST-ASTI PhilSensors (~43 stations)<br/>Microsoft Global ML Building Footprints (~17.4M polygons)"]
     B["ETL Ingestion<br/>scrape_waterlevel.py — session POST + CSRF scraping<br/>scrape_households.py — Fiona streaming + bbox filter"]
@@ -524,7 +524,7 @@ flowchart TD
 ### Flood-to-House Damage Ratio Scoring Diagram
 
 ```mermaid
-%%{init: {'flowchart': {'curve': 'step'}}}%%
+%%{init: {'theme': 'base', 'flowchart': {'curve': 'step'}, 'themeVariables': {'primaryColor': '#ffffff', 'primaryBorderColor': '#000000', 'primaryTextColor': '#000000', 'lineColor': '#000000', 'secondaryColor': '#ffffff', 'tertiaryColor': '#ffffff', 'mainBkg': '#ffffff', 'nodeBorder': '#000000', 'clusterBkg': '#ffffff', 'clusterBorder': '#000000', 'edgeLabelBackground': '#ffffff', 'attributeBackgroundColorOdd': '#ffffff', 'attributeBackgroundColorEven': '#ffffff'}}}%%
 flowchart LR
     A["Building Footprint<br/>(House_Surface_Area_Sqm)"]
     B["EPSG:3857 Projection<br/>Area computation in m²"]
